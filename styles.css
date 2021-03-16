@@ -48,3 +48,20 @@ footer {
     background-color: gold;
     grid-area: footer;
 }
+
+@media screen and (max-width: 575px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 80px 120px auto 50px;
+        grid-template-areas:
+        "header"
+        "small-sidebar"
+        "big-sidebar"
+        "article"
+        "footer";
+    }
+
+    header{
+        background-color: fuchsia;
+    }
+}
